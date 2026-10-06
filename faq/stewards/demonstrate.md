@@ -5,9 +5,9 @@ Related issues: https://github.com/orcwg/cra-hub/issues/11
 
 # How do _open-source software stewards_ demonstrate that they meet their obligations?
 
-[[Article 24(1)]] requires stewards to "put in place and document in a verifiable manner" a cybersecurity policy. That phrase occurs once in the Regulation and is nowhere defined. Under [[Article 24(2)]] the documentation has one reader and one trigger: a reasoned request from a market surveillance authority. It is answered in paper or electronic form, in a language that authority can easily understand.
+[[Article 24(1)]] requires stewards to "put in place and document in a verifiable manner" a cybersecurity policy. The Regulation does not define that phrase. Under [[Article 24(2)]], a market surveillance authority may request the policy documentation, which the steward must provide in paper or electronic form and in language the authority can easily understand.
 
-A steward therefore demonstrates its policy and how that policy operates, never a product, so no conformity assessment or CE marking follows ([[Recital 19]], [[stewards/essential-requirements]]).
+This Article 24 documentation concerns the steward's cybersecurity policy and its operation. It is separate from a manufacturer's product conformity assessment and CE-marking obligations ([[Recital 19]], [[stewards/essential-requirements]]).
 
 Manufacturers ask separately, under their own [[Article 13(5)]] due diligence, usually in prose fields returned as a document. Those fields carry no version or component identifier, so an answer cannot be bound to a particular build. Meanwhile the steward may already publish bills of materials, signed builds and vulnerability data beside its releases ([[stewards/sbom]]). What is missing is often not the evidence but a channel the asking process can read.
 
