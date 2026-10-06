@@ -17,7 +17,7 @@ A record can be checked by someone who did not write it when it has four propert
 
 Open formats already provide these. An [in-toto statement](https://github.com/in-toto/attestation) binds claims to the digests of the artifacts they describe. A [DSSE envelope](https://github.com/secure-systems-lab/dsse) signs the statement together with its payload type, so there is no doubt about which bytes were signed. [RFC 8785](https://www.rfc-editor.org/rfc/rfc8785) canonical JSON makes the same data serialise to the same bytes, so author and reader compute the same digest. Many projects already publish SBOMs and build provenance in these forms ([[stewards/sbom]]).
 
-What a reader cannot verify from the record alone is whether its claims are true. A valid signature shows who made a statement and that it has not changed since; it does not show that the statement is correct. Verification narrows the trust a reader needs down to the holder of the key, and the reader still decides whether to trust that holder.
+What a reader cannot verify from the record alone is whether its claims are true. A valid signature shows that someone controlling a particular signing key signed those exact bytes and that the signed content has not changed. It identifies a person or organisation only when the reader has separate, current evidence binding that key to them. The reader still decides whether to trust the signer, the signer's authority, the process that produced the record and the claims themselves.
 
 To watch these checks run, a public test corpus of signed records, including deliberately broken ones a verifier must reject, replays with one command:
 
